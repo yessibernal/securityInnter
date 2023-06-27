@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: innter-ms-security
+  datasource:
+    url: jdbc:mysql://${dev-db-url:192.168.1.70}:${dev-db-port:3306}/${dev-db-name-pos:innter}
+    username: ${dev-db-username-pos:root}
+    password: ${dev-db-password-pos:R007}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+server:
+  port: 8082
